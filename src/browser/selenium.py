@@ -1,7 +1,7 @@
 from selenium import webdriver
 from enum import Enum
 
-class SeleniumBrowser:
+class ScrapeGoatBrowser:
 
     def __init__(self, browserType: str):
         self.generateBrowser(browserType)
