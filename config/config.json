@@ -3,14 +3,14 @@
         "simple_login": {
             "routine-config": {
                 "chrome": {
-                    "initialPage": "https://login.anywhere",
+                    "initialPage": "https://github.com/login",
                     "user_field_id": "mat-input-0",
                     "pass_field_id": "mat-input-1",
                     "user_field_text": "0000000",
                     "pass_field_text": "teste"
                 },
                 "firefox": {
-                    "initialPage": "https://login.anywhere",
+                    "initialPage": "https://github.com/login",
                     "user_field_id": "mat-input-0",
                     "pass_field_id": "mat-input-1",
                     "user_field_text": "0000000",
