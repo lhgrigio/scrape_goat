@@ -144,5 +144,3 @@ def mainMenu():
         listRoutines()
     elif menu.chosen_accept_key == 'q' or menu.chosen_menu_index == 3:
         exit_cli()
-
-# mainMenu(config={"driver": "selenium", "selectedRoutines": ['test']})
