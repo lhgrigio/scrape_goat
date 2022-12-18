@@ -7,11 +7,12 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
 # module imports
+from routines import abstract_routine
 from configreader import getConfig
 from utils.strings import SG_MISSING_BROWSER_CONFIGURATION, SG_EXECUTION_ERRO_ROUTINE_GENERIC, SG_GENERIC_ROUTINE_SUCCESS, SG_GENERIC_ROUTINE_START
 from utils.tasks import loginBasic2Fields, waitForInitialElementDetectionByID
 
-class SimpleLoginRoutine():
+class SimpleLoginRoutine(abstract_routine.AbstractRoutine):
 
     def __init__(self, browser, autoRun: bool):
         self.drivenBrowser = browser
@@ -24,6 +25,11 @@ class SimpleLoginRoutine():
             logger.info(SG_MISSING_BROWSER_CONFIGURATION(browser.browser.name, self.routineName))
         if autoRun:
             self.routineInit()
+
+    # Abstract implementation
+    def execute(self):
+        pass
+        
 
     def routineInit(self):
         logger.info(SG_GENERIC_ROUTINE_START(self.routineName))

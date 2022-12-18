@@ -15,16 +15,13 @@ class ScrapeGoatBrowser:
             newBrowser = webdriver.Edge()
         elif browserType == BrowserOptions.SAFARI.value:
             newBrowser = webdriver.Safari()
-        else:
-            newBrowser = webdriver.Chrome()
-        
         self.browser = newBrowser
 
     def getBrowser(self):
         return self.browser
     
     def closeBrowser(self):
-        self.browser.close()
+        self.browser.quit()
 
     def goToPage(self, page: str):
         self.browser.get(page)
@@ -34,3 +31,7 @@ class BrowserOptions(Enum):
     FIREFOX = 'Firefox'
     EDGE = 'Edge'
     SAFARI = 'Safari'
+
+    @staticmethod
+    def list():
+        return list(map(lambda b: b.value, BrowserOptions))

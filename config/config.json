@@ -18,5 +18,11 @@
                 }
             }
         }
+    },
+    "cli": {
+        "selected_browser": "Firefox",
+        "selected_routines": [
+            "simple_login"
+        ]
     }
 }
