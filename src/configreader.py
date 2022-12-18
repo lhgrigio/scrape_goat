@@ -1,4 +1,4 @@
-import json;
+import json
 from pathlib import Path
 
 with open(Path().parent / 'config' / 'config.json') as _config_file:

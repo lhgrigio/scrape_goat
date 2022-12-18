@@ -18,5 +18,8 @@
                 }
             }
         }
+    },
+    "cli": {
+        "selectec_browser": "Selenium"
     }
 }
