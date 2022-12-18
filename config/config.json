@@ -20,7 +20,7 @@
         }
     },
     "cli": {
-        "selected_browser": "Chrome",
+        "selected_browser": "Firefox",
         "selected_routines": [
             "simple_login"
         ]
